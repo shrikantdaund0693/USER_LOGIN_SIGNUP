@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    border: 1px solid black;
+    width: 50%;
+    height: 600px;
+    margin: 55px auto;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+@media (max-width:760px) and (min-width:391px) {
+    .container{
+        width: 90%;
+    }
+}
+@media (max-width:390px) {
+    .container{
+        width: 98%;
+    }
+}
+.buttons button{
+    border-radius: 0px;
+}
+.user{
+    width: 80px;
+    margin-bottom: 10px;
+}
+@keyframes flip2 {
+    0%{
+        width: 0%;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        width: 100%;
+        transform: matrix3d(-360deg);
+    }
+}
+.sign-in-div{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    animation-name: flip2;
+    animation-duration: 1s;
+}
+.login{
+    border: 1px solid white;
+    box-shadow: 1px 1px 8px black;
+}
+input{
+    padding: 5px;
+    width: 70%;
+    margin-bottom: 10px;
+}
+.remember{
+    width: auto;
+}
+.remember-div{
+    text-align: left;
+    padding: 5px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 20px;
+}
+.forgot{
+    position: absolute;
+    right: 0;
+}
+@keyframes flip1 {
+    0%{
+        width: 0%;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        width: 100%;
+        transform: matrix3d(-360deg);
+    }
+}
+.sign-up-div{
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+    width: 100%;
+    animation-name: flip1;
+    animation-duration: 1s;
+}
+hr{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.sign-with i{
+    padding: 5px;
+    margin-right: 5px;
+    font-size: 1.4em;
+    transition: all 200ms;
+}
+.fa-instagram:hover{
+    border-radius: 50%;
+    color: white;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+.fa-github:hover{
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+}
+.fa-facebook:hover{
+    border-radius: 50%;
+    color: white;
+    background-color: blue;
+}
+.fa-google:hover{
+    border-radius: 50%;
+    color: white;
+    background: #4285F4;
+}
+.sign-up-div input{
+    margin-bottom: 10px;
+}
+.sign-up-div input[type='submit']{
+    margin-top: 30px;
+}
+.sign-with a{
+    text-decoration: none;
+    color: black;
+}

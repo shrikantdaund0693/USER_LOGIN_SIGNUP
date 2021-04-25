@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER</title>
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <script src="./scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/23c0e963da.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row buttons">
+            <button class="btn btn-info col-sm-6 login" id="login">LOGIN</button>
+            <button class="btn btn-success col-sm-6 signup" id='signup'>SIGN-UP</button>
+        </div>
+        <div class="row">
+            <div class="sign-in-div">
+                <img src="./images/user.png" class="user" alt="">
+                <hr>
+                <div class="form-div">
+                    <form action="">
+                        <input type="text" placeholder="Username" required>
+                        <input type="text" placeholder="Password" required>
+                        <div class="remember-div">
+                            <input type="checkbox" name="remember" id="remember" class="remember"><span>Remember Me</span>
+                            <span class="forgot"><a href="">Forgot Password?</a></span>
+                        </div>
+                        <input type="submit" value="Login" class="btn btn-info">
+                    </form>
+                </div>
+                <div>
+                    <hr>
+                    <p>Sign In with</p>
+                    <div class="sign-with">
+                        <a href=""><i class="fab fa-google"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="sign-up-div">
+                <img src="./images/user.png" class="user" alt="">
+                <hr>
+                <div class="form-div">
+                    <form action="">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Username" required>
+                        <input type="password" name="pass1" id="" placeholder="Password" required>
+                        <input type="password" name="pass1" id="" placeholder="Confirm Password" required>
+                        <input type="submit" value="Sign Up" class="btn btn-success">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
