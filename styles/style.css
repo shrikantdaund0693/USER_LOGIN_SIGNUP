@@ -25,10 +25,7 @@
 }
 @media (max-width:367px) {
     .container{
-        width: 100%;
-    }
-    .remember-div{
-        width:100%;
+        width: 99%;
     }
     .remember-div span{
         font-size: 90%;
